@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Барбершоп Бородинский</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo">
+      <img src="http://placehold.it/226x30" width="226" height="30" alt="Барбешоп Бородинский">
+    </div>
+    <nav class="main-navigation main-navigation--closed">
+      <button class="main-navigation__toggle" type="button">Open</button>
+      <ul class="main-navigation__items">
+        <li class="main-navigation__item main-navigaton__item--active"><a href="#">Записаться</a></li>
+        <li class="main-navigation__item"><a href="#">Главная</a></li>
+        <li class="main-navigation__item"><a href="#">Наши работы</a></li>
+        <li class="main-navigation__item"><a href="#">Записаться</a></li>
+        <li class="main-navigation__item"><a href="#">Контакты</a></li>
+        <li class="main-navigation__item"><a href="#">HTML Academy</a></li>
+      </ul>
+      <ul class="main-navigation__user-items">
+        <li class="main-navigation__user-item">
+          <a class="main-navigation__user-login" href="#">Вход</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="form">
+      <h2 class="form__title">Запись на стрижку</h2>
+      <form action="">
+        <fieldset class="form__contacts">
+          <input class="form__contact" type="text" name="contacts" id="" placeholder="Фамилия">
+          <input class="form__contact" type="text" name="contacts" id="" placeholder="Имя">
+          <input class="form__contact" type="text" name="contacts" id="" placeholder="Отчество">
+          <input class="form__contact" type="tel" name="contacts" id="" placeholder="Контактный телефон">
+          <input class="form__contact" type="email" name="contacts" id="" placeholder="Контактный e-mail">
+          <textarea class="form__contact" name="contacts" rows="8" cols="80">Доп. информация для мастера</textarea>
+        </fieldset>
+        <fieldset class="form__models">
+          <legend>Выберите модель бороды:</legend>
+          <input class="form__model" type="radio" name="model" id="model-1">
+          <label for="model-1">адмирал</label>
+          <input class="form__model" type="radio" name="model" id="model-2">
+          <label for="model-2">лесоруб</label>
+          <input class="form__model" type="radio" name="model" id="model-3">
+          <label for="model-3">полярник</label>
+          <input class="form__model" type="radio" name="model" id="model-4">
+          <label for="model-4">боярин</label>
+          <input class="form__model" type="radio" name="model" id="model-5">
+          <label for="model-5">мудрец</label>
+        </fieldset>
+        <fieldset class="form__services">
+          <legend>Дополнительные услуги:</legend>
+          <input class="form__service" type="checkbox" name="service" id="service-1">
+          <label for="service-1">Подкрасить бороду</label>
+          <input class="form__service" type="checkbox" name="service" id="service-2">
+          <label for="service-2">Накрутить усы</label>
+          <input class="form__service" type="checkbox" name="service" id="service-3">
+          <label for="service-3">Причесать бороду</label>
+          <input class="form__service" type="checkbox" name="service" id="service-4">
+          <label for="service-4">Подравнять виски</label>
+          <input class="form__service" type="checkbox" name="service" id="service-5">
+          <label for="service-5">Убрать седину</label>
+          <input class="form__service" type="checkbox" name="service" id="service-6">
+          <label for="service-6">Отполировать лысину</label>
+        </fieldset>
+        <input class="form__submit btn" type="submit" value="Отправить заявку">
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <p class="main-footer__contacts">
+      <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
+      <a href="tel:+78125556666">
+              <span>+7 (812) 555-66-66</span>
+          </a>
+    </p>
+    <p class="main-footer__social">
+      <span class="social--links">
+              <a class="social-link social-link--vk" href="#">VK</a>
+              <a class="social-link social-link--fb" href="#">FB</a>
+              <a class="social-link social-link--in" href="#">IN</a>
+          </span>
+    </p>
+    <p class="main-footer__copyright">
+      Разработано:
+      <a class="main-footer__copyright-link btn" href="#">HTML Academy</a>
+    </p>
+  </footer>
+</body>
+
+</html>
