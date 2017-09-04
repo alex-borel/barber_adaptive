@@ -1,0 +1,69 @@
+.form {
+  width: 100%;
+  background-color: $light-color;
+  &__wrapper {
+    @include container-mobile;
+    min-height: 1600px;
+    border: 1px solid red;
+  }
+  &__contacts {
+    width: 280px;
+    min-height: 444px;
+    border: 2px solid green;
+    margin: 20px auto;
+  }
+  &__models {
+    width: 280px;
+    min-height: 490px;
+    border: 2px solid green;
+    margin: 20px auto;
+  }
+  &__services {
+    width: 280px;
+    min-height: 490px;
+    border: 2px solid green;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .form {
+    &__wrapper {
+      min-height: 1630px;
+      width: 640px;
+    }
+    &__contacts {
+      width: 640px;
+      min-height: 530px;
+    }
+    &__models {
+      width: 640px;
+      min-height: 370px;
+    }
+    &__services {
+      width: 640px;
+      min-height: 420px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .form {
+    &__wrapper {
+      width: 960px;
+      min-height: 1490px;
+    }
+    &__contacts {
+      width: 960px;
+      min-height: 420px;
+    }
+    &__models {
+      width: 960px;
+      min-height: 380px;
+    }
+    &__services {
+      width: 960px;
+      min-height: 360px;
+    }
+  }
+}

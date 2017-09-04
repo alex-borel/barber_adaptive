@@ -1,0 +1,49 @@
+.stats {
+  @include container-mobile;
+  border: 1px solid red;
+  background-color: $grey-color;
+  &__header {
+    min-height: 183px;
+    border: 2px solid green;
+    background-color: silver;
+  }
+  &__items {
+    width: 100%;
+    height: 320px;
+    border: 2px solid blue;
+    background-color: pink
+  }
+}
+
+@media (min-width: $tablet) {
+  .stats {
+    position: relative;
+    z-index: 1;
+    margin-top: -185px;
+    width: 640px;
+    &__header {
+      min-height: 185px;
+    }
+    &__items {
+      display: block;
+      height: 320px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .stats {
+    margin-top: -160px;
+    display: flex;
+    width: 960px;
+    &__header {
+      width: 320px;
+      min-height: 320px;
+    }
+    &__items {
+      width: 640px;
+      min-height: 320px;
+    }
+  }
+}
+

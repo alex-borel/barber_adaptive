@@ -1,0 +1,32 @@
+.main-header {
+    background-color: $light-grey;
+    width: 100%;
+    border: 2px solid pink;
+    &__logo {
+        @include container-mobile;
+        min-height: 85px;
+        display: flex;
+        border: 1px solid green;
+       img {
+           margin: auto;
+       }
+    }
+}
+
+@media (min-width: $tablet) {
+    .main-header {
+        display: flex;
+        flex-direction: column-reverse;
+        &__logo {
+            width: 640px;
+            min-height: 400px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .main-header__logo {
+        width: 960px;
+        min-height: 650px;
+    }
+}

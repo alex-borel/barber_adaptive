@@ -1,0 +1,23 @@
+.photo {
+    width: 100%;
+    background-color: $light-color;
+    &__wrapper {
+        @include container-mobile;
+        min-height: 2030px;
+        border: 2px solid red;
+    }
+}
+
+@media (min-width: $tablet) {
+    .photo__wrapper {
+        width: 640px;
+        min-height: 1700px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .photo__wrapper {
+        width: 960px;
+        min-height: 1330px;
+    }
+}

@@ -1,0 +1,20 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: $black-color;
+    background-color: $grey-color;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }

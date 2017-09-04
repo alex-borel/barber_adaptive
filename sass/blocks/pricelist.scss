@@ -1,0 +1,63 @@
+.pricelist {
+  width: 100%;
+  background-color: $light-grey;
+  &__wrapper {
+    @include container-mobile;
+    min-height: 576px;
+    border: 2px solid orange;
+  }
+  &__items {
+    width: 280px;
+    height: 360px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__time {
+    width: 280px;
+    min-height: 90px;
+    border: 2px solid white;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: $tablet) {
+    .pricelist {
+        &__wrapper {
+            width: 640px;
+            min-height: 630px;
+        }
+        &__items {
+            width: 640px;
+            min-height: 275px;
+        }
+        &__time {
+            width: 640px;
+            min-height: 110px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .pricelist {
+        &__wrapper {
+            width: 960px;
+            min-height: 525px;
+        }
+        &__items {
+            width: 627px;
+            height: 280px;
+            display: inline-block;
+            margin: 0;
+            
+        }
+        &__time {
+            width: 270px;
+            min-height: 280px;
+            display: inline-block;
+            margin: 0;
+            margin-left: 55px;
+            
+        }
+    }
+}

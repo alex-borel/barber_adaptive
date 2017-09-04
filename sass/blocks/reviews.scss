@@ -1,0 +1,56 @@
+.reviews {
+  width: 100%;
+  background-color: $light-color;
+  &__wrapper {
+    @include container-mobile;
+    min-height: 285px;
+    border: 2px solid brown;
+  }
+  &__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 10px auto;
+    border: 1px solid red;
+    width: 280px;
+    height: 180px;
+  }
+  &__item {
+    border: 1px solid green;
+    height: 140px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .reviews {
+    &__wrapper {
+      width: 640px;
+      min-height: 360px;
+    }
+    &__items {
+      width: 640px;
+      height: 160px;
+    }
+    &__item {
+      width: 540px;
+      margin: 0 auto;
+      height: 160px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .reviews {
+    &__wrapper {
+      width: 960px;
+      min-height: 380px;
+    }
+    &__items {
+      width: 960px;
+    }
+    &__item {
+      width: 820px;
+    }
+  }
+}
+

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Barbershop</title>
 </head>
 
@@ -14,27 +16,32 @@
       <img src="http://placehold.it/226x30" width="226" height="30" alt="Барбешоп Бородинский">
     </div>
     <nav class="main-navigation main-navigation--closed">
-      <button class="main-navigation__toggle" type="button">Open</button>
-      <ul class="main-navigation__items">
-        <li class="main-navigation__item main-navigaton__item--active"><a href="#">Главная</a></li>
-        <li class="main-navigation__item"><a href="#">Наши работы</a></li>
-        <li class="main-navigation__item"><a href="#">Записаться</a></li>
-        <li class="main-navigation__item"><a href="#">Контакты</a></li>
-        <li class="main-navigation__item"><a href="#">HTML Academy</a></li>
-      </ul>
-      <ul class="main-navigation__user-items">
-        <li class="main-navigation__user-item">
-          <a class="main-navigation__user-login" href="#">Вход</a>
-        </li>
-      </ul>
+      <div class="main-navigation__wrapper">
+        <!-- <button class="main-navigation__toggle" type="button">Open</button> -->
+        <ul class="main-navigation__items">
+          <!-- <li class="main-navigation__item main-navigaton__item--active"><a href="#">Главная</a></li>
+          <li class="main-navigation__item"><a href="#">Наши работы</a></li>
+          <li class="main-navigation__item"><a href="#">Записаться</a></li>
+          <li class="main-navigation__item"><a href="#">Контакты</a></li>
+          <li class="main-navigation__item"><a href="#">HTML Academy</a></li> -->
+        </ul>
+        <ul class="main-navigation__user-items">
+          <!-- <li class="main-navigation__user-item">
+            <a class="main-navigation__user-login" href="#">Вход</a>
+          </li> -->
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
     <section class="stats">
-      <h2 class="stats__title">Стрижка у нас <br> это выгодно</h2>
-      <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+      <header class="stats__header">
+        <!-- <h2 class="stats__title">Стрижка у нас <br> это выгодно</h2>
+        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        <small class="stats__legend stats__legend--top"><sup>*</sup> - приведенные данные ложь</small> -->
+      </header>
       <table class="stats__items">
-        <tr>
+        <!-- <tr>
           <td class="stats__value">1 500 <sup>*</sup> </td>
           <td class="stats__field">рублей <br> вложений</td>
         </tr>
@@ -49,102 +56,118 @@
         <tr>
           <td class="stats__value">500 000 <sup>*</sup></td>
           <td class="stats__field">лайков и <br>комплиментов</td>
-        </tr>
+        </tr> -->
       </table>
-      <span class="stats__legend"><sup>*</sup> - приведенные данные ложь</span>
+      <!-- <small class="stats__legend stats__legend--bottom"><sup>*</sup> - приведенные данные ложь</small> -->
     </section>
     <section class="advantages">
-      <div class="slider">
-        <input class="slider__input" type="radio" name="advantages" id="advantages-input-1" checked>
-        <input class="slider__input" type="radio" name="advantages" id="advantages-input-2">
-        <input class="slider__input" type="radio" name="advantages" id="advantages-input-3">
+      <div class="advantages__wrapper">
+        <!-- <div class="slider">
+          <input class="slider__input" type="radio" name="advantages" id="advantages-input-1" checked>
+          <input class="slider__input" type="radio" name="advantages" id="advantages-input-2">
+          <input class="slider__input" type="radio" name="advantages" id="advantages-input-3"> -->
         <ul class="advantages__items">
           <li class="advantages__item advantages__item--fast slider__item">
-            <img src="http://placehold.it/95x94" width="95" height="94" alt="Ножницы">
-            <h3 class="advantages__item-title">Быстро</h3>
-            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+            <!-- <img src="http://placehold.it/95x94" width="95" height="94" alt="Ножницы">
+              <h3 class="advantages__item-title">Быстро</h3>
+              <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p> -->
           </li>
           <li class="advantages__item">
-            <img src="http://placehold.it/95x88" width="95" height="88" alt="Кресло">
-            <h3 class="advantages__item-title">Круто</h3>
-            <p>Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино.Во всяком случае внешне.</p>
+            <!-- <img src="http://placehold.it/95x88" width="95" height="88" alt="Кресло">
+              <h3 class="advantages__item-title">Круто</h3>
+              <p>Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино.Во всяком случае внешне.</p> -->
           </li>
           <li class="advantages__item">
-            <img src="http://placehold.it/95x94" width="95" height="91" alt="Штамп">
-            <h3 class="advantages__item-title">Дорого</h3>
-            <p>Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+            <!-- <img src="http://placehold.it/95x94" width="95" height="91" alt="Штамп">
+              <h3 class="advantages__item-title">Дорого</h3>
+              <p>Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый
+                статус?
+              </p> -->
           </li>
         </ul>
-        <div class="advantages__toggles slider__toggles">
-          <label class="slider__toggle" for="advantages-input-1">1</label>
-          <label class="slider__toggle" for="advantages-input-2">2</label>
-          <label class="slider__toggle" for="advantages-input-3">3</label>
-        </div>
+        <!-- <div class="advantages__toggles slider__toggles">
+            <label class="slider__toggle" for="advantages-input-1">1</label>
+            <label class="slider__toggle" for="advantages-input-2">2</label>
+            <label class="slider__toggle" for="advantages-input-3">3</label>
+          </div>
+        </div> -->
       </div>
     </section>
     <section class="news">
-      <h2 class="news__title">Новости и акции</h2>
-      <ul class="news__items">
-        <li class="news__item">
-          <time class="news__date" datetime="2017-09-29"><b>29</b> сент</time>
-          <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
-        </li>
-        <li class="news__item" datetime="2017-09-19"><b>19</b> сент</li>
-        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
-      </ul>
-      <a class="news__to-all btn" href="#">Показать все</a>
+      <div class="news__wrapper">
+        <h2 class="news__title">Новости и акции</h2>
+        <ul class="news__items">
+          <li class="news__item">
+            <!-- <time class="news__date" datetime="2017-09-29"><b>29</b> сент</time>
+          <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p> -->
+          </li>
+          <li class="news__item">
+            <!-- <time class="news__date" datetime="2017-09-19"><b>19</b> сент</time>
+          <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные
+            ряды. Спешите записаться!</p> -->
+          </li>
+          <li class="news__item"></li>
+        </ul>
+
+        <!-- <a class="news__to-all btn" href="#">Показать все</a> -->
+      </div>
     </section>
     <section class="reviews">
-      <div class="slider">
+      <div class="reviews__wrapper">
+        <!-- <div class="slider"> -->
         <h2 class="reviews__title">Отзывы о нас</h2>
-        <a class="reviews__write btn" href="#">Оставить свой</a>
+        <!-- <a class="reviews__write btn" href="#">Оставить свой</a>
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3"> -->
         <ul class="reviews__items">
-          <li class="review__item">
+          <!-- <li class="reviews__item">
             <img src="http://placehold.it/50x49" width="50" height="49" alt="Трэвис">
             <blockquote>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
             <cite>Трэвис Баркер</cite>
           </li>
-          <li class="review__item">
+          <li class="reviews__item">
             <img src="http://placehold.it/50x49" width="50" height="49" alt="Трэвис">
             <blockquote>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
             <cite>Трэвис Баркер</cite>
-          </li>
-          <li class="review__item">
-            <img src="http://placehold.it/50x49" width="50" height="49" alt="Трэвис">
+          </li> -->
+          <li class="reviews__item">
+            <!-- <img src="http://placehold.it/50x49" width="50" height="49" alt="Трэвис">
             <blockquote>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
-            <cite>Трэвис Баркер</cite>
+            <cite>Трэвис Баркер</cite> -->
           </li>
         </ul>
-        <div class="reviews__toggles slider__toggles">
+        <!-- <div class="reviews__toggles slider__toggles">
           <label class="slider__toggle" for="reviews-input-1">1</label>
           <label class="slider__toggle" for="reviews-input-2">2</label>
           <label class="slider__toggle" for="reviews-input-3">3</label>
         </div>
+      </div> -->
       </div>
     </section>
   </main>
   <footer class="main-footer">
+    <div class="main-footer__wrapper">
     <p class="main-footer__contacts">
-      <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
+      <!-- <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
       <a href="tel:+78125556666">
                <span>+7 (812) 555-66-66</span>
-           </a>
+           </a> -->
     </p>
     <p class="main-footer__social">
-      <span class="social--links">
+      <!-- <span class="social-links">
                <a class="social-link social-link--vk" href="#">VK</a>
                <a class="social-link social-link--fb" href="#">FB</a>
                <a class="social-link social-link--in" href="#">IN</a>
-           </span>
+           </span> -->
     </p>
     <p class="main-footer__copyright">
-      Разработано:
-      <a class="main-footer__copyright-link btn" href="#">HTML Academy</a>
+      <!-- Разработано:
+      <a class="main-footer__copyright-link btn" href="#">HTML Academy</a> -->
     </p>
+  </div>
   </footer>
 </body>
 
 </html>
+

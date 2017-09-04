@@ -1,0 +1,27 @@
+{
+  "name": "barber_adaptive",
+  "version": "1.0.0",
+  "description": "Barbershop for htmlacademy.ru",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp styles",
+    "start": "npm run build && gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-borel/barber_adaptive.git"
+  },
+  "author": "Alexander Borel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-borel/barber_adaptive/issues"
+  },
+  "homepage": "https://github.com/alex-borel/barber_adaptive#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "normalize-scss": "^7.0.0"
+  }
+}
