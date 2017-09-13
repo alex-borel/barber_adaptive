@@ -1,0 +1,27 @@
+.slider__input {
+  display: none;
+}
+
+.slider__toggles {
+  position: absolute;
+  bottom: 5px;
+  left: 122px;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 23px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  border: 1px solid #a5a5a5;
+  &--active {
+    background-color: $white-color;
+  }
+}
+
+.slider__toggle:first-child {
+  margin-left: 0;
+}
+

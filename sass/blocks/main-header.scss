@@ -1,32 +1,33 @@
 .main-header {
-    background-color: $light-grey;
-    width: 100%;
-    border: 2px solid pink;
-    &__logo {
-        @include container-mobile;
-        min-height: 85px;
-        display: flex;
-        border: 1px solid green;
-       img {
-           margin: auto;
-       }
-    }
+  width: 100%;
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: center;
+  min-height: 85px;
+  background-color: $grey-dark;
+  @include container-mobile;
 }
 
 @media (min-width: $tablet) {
-    .main-header {
-        display: flex;
-        flex-direction: column-reverse;
-        &__logo {
-            width: 640px;
-            min-height: 400px;
-        }
-    }
+  .main-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-header__logo {
+    width: 100%;
+    min-height: 397px;
+    background: $black-color url('../img/header-bg.jpg') no-repeat center top;
+    background-size: cover;
+  }
 }
 
 @media (min-width: $desktop) {
-    .main-header__logo {
-        width: 960px;
-        min-height: 650px;
-    }
+  .main-header__logo {
+    min-height: 650px;
+    background: $black-color url('../img/header-bg-desktop.jpg') no-repeat center top;
+    background-size: cover;
+  }
 }
+

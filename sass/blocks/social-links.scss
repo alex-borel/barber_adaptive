@@ -1,0 +1,99 @@
+.social-links {
+  display: flex;
+}
+
+.social-links__item {
+  display: block;
+  width: 106px;
+  height: 100px;
+  transition: background-position .7s, background-color .7s;
+  vertical-align: top;
+  border: 1px solid #3e3e3e;
+  border-right: none;
+  background: url('../img/spritesheet.png') no-repeat;
+  &:hover {
+    border-color: #252525;
+    background: #252525 url('../img/spritesheet.png') no-repeat;
+  }
+  &--vk {
+    border-left: none;
+    background-position: -70px -1105px;
+  }
+  &--fb {
+    background-position: -68px -82px;
+  }
+  &--in {
+    background-position: -76px -598px;
+  }
+  &--vk:hover {
+    background-position: -70px -1351px;
+  }
+  &--fb:hover {
+    background-position: -68px -341px;
+  }
+  &--in:hover {
+    background-position: -76px -854px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .social-links__item {
+    width: 213px;
+    &--vk {
+      border-left: 1px solid #3e3e3e;
+      background-position: -17px -1105px;
+    }
+    &--fb {
+      background-position: -12px -82px;
+    }
+    &--in {
+      border-right: 1px solid #3e3e3e;
+      background-position: -22px -598px;
+    }
+    &--vk:hover {
+      background-position: -17px -1351px;
+    }
+    &--fb:hover {
+      background-position: -12px -341px;
+    }
+    &--in:hover {
+      background-position: -22px -854px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .social-links {
+    justify-content: space-between;
+    width: 163px;
+  }
+  .social-links__item {
+    width: 50px;
+    height: 50px;
+    background: url('../img/social-desktop.png') no-repeat;
+    &:hover {
+      background: #252525 url('../img/social-desktop.png') no-repeat;
+    }
+    &--vk {
+      border-right: 1px solid #3e3e3e;
+      background-position: -23px -425px;
+    }
+    &--fb {
+      border-right: 1px solid #3e3e3e;
+      background-position: -21px -27px;
+    }
+    &--in {
+      background-position: -25px -227px;
+    }
+    &--vk:hover {
+      background-position: -23px -522px;
+    }
+    &--fb:hover {
+      background-position: -21px -127px;
+    }
+    &--in:hover {
+      background-position: -25px -326px;
+    }
+  }
+}
+

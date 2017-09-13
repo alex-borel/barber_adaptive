@@ -1,56 +1,191 @@
 .reviews {
   width: 100%;
+}
+
+.reviews__wrapper {
+  position: relative;
+  border: 1px solid $light-color;
   background-color: $light-color;
-  &__wrapper {
-    @include container-mobile;
-    min-height: 285px;
-    border: 2px solid brown;
+  @include container-mobile;
+  &::after {
+    position: absolute;
+    z-index: 2;
+    bottom: -35px;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 35px 160px 0 160px;
+    border-style: solid;
+    border-color: $light-color transparent transparent transparent;
   }
-  &__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin: 10px auto;
-    border: 1px solid red;
-    width: 280px;
-    height: 180px;
+}
+
+.reviews__write {
+  display: none;
+}
+
+.reviews__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews__items {
+  width: 280px;
+  margin: 40px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  display: none;
+  &--active {
+    display: block;
+    animation: items 1s;
   }
-  &__item {
-    border: 1px solid green;
-    height: 140px;
+}
+
+.reviews__item p {
+  display: inline-block;
+  width: 210px;
+  margin-top: -11px;
+  margin-left: 15px;
+  vertical-align: top;
+}
+
+.reviews__item b {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+div.reviews__toggles {
+  position: absolute;
+  bottom: 11px;
+  left: 122px;
+}
+
+.reviews__toggles .slider__toggle {
+  border-color: #939290;
+  &--active {
+    background-color: #353535;
   }
 }
 
 @media (min-width: $tablet) {
   .reviews {
-    &__wrapper {
-      width: 640px;
-      min-height: 360px;
+    background-color: $light-color;
+  }
+  .reviews__wrapper {
+    position: relative;
+    @include container-tablet;
+    min-height: 354px;
+    &::after {
+      display: none;
     }
-    &__items {
-      width: 640px;
-      height: 160px;
+  }
+  .reviews__write {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: block;
+    text-align: center;
+    color: $black-color;
+    border: 1px solid #3e3e3e;
+    border-color: $beige-color;
+    &:hover {
+      border-color: #d5c9bd;
     }
-    &__item {
-      width: 540px;
-      margin: 0 auto;
-      height: 160px;
+    &:active {
+      color: #a99f95;
+      background-color: #d5c9bd;
     }
+  }
+  .reviews__items {
+    position: relative;
+    width: 542px;
+    height: 160px;
+    margin-top: 42px;
+    border: 1px solid $beige-color;
+    &::before {
+      position: absolute;
+      top: -1px;
+      left: -50px;
+      display: block;
+      width: 50px;
+      height: 159px;
+      content: '';
+      cursor: pointer;
+      border: 1px solid $beige-color;
+      background: url('../img/slider.png') no-repeat;
+      background-position: -163px -107px;
+    }
+    &::after {
+      position: absolute;
+      top: -1px;
+      right: -50px;
+      display: block;
+      width: 50px;
+      height: 159px;
+      content: '';
+      cursor: pointer;
+      border: 1px solid $beige-color;
+      background: url('../img/slider.png') no-repeat;
+      background-position: -163px -851px;
+    }
+  }
+  .reviews__item {
+    width: 480px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .reviews__item p {
+    width: 360px;
+    margin-left: 55px;
+  }
+  .reviews__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 40px;
+    text-align: left;
+  }
+  div.reviews__toggles {
+    z-index: 1;
+    bottom: 60px;
+    left: 270px;
+    padding: 0 10px;
+    background-color: $light-color;
   }
 }
 
 @media (min-width: $desktop) {
-  .reviews {
-    &__wrapper {
-      width: 960px;
+    .reviews__wrapper {
+      @include container-desktop;
       min-height: 380px;
     }
-    &__items {
-      width: 960px;
+    .reviews__title {
+      margin-left: 68px;
     }
-    &__item {
-      width: 820px;
+    .reviews__items {
+      width: 819px;
+      &::before {
+        left: -72px;
+      }
+      &::after {
+        right: -72px;
+      }
     }
-  }
+    div.reviews__toggles {
+      left: 429px;
+      bottom: 37px;
+    }
 }
 

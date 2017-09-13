@@ -12,16 +12,19 @@ gulp.task('serve', function () {
     ui: false
   });
 
-  gulp.watch('sass/**/*.scss', function(event, cb) {
-    setTimeout(function() {gulp.start('styles');},500)
+  gulp.watch('sass/**/*.scss', function (event, cb) {
+    setTimeout(function () {
+      gulp.start('styles');
+    }, 500)
   });
-  
+
   gulp.watch('*.html').on('change', server.reload);
+  gulp.watch('*.js').on('change', server.reload);
 });
 
 gulp.task('styles', function () {
-     gulp.src('./sass/style.scss')
-    .pipe(sass().on('error', sass.logError))    
+  gulp.src('./sass/style.scss')
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css/'))
     .pipe(server.reload({
       stream: true
