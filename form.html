@@ -7,29 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Барбершоп Бородинский</title>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
   <header class="main-header">
-    <div class="main-header__logo">
-      <img src="http://placehold.it/226x30" width="226" height="30" alt="Барбешоп Бородинский">
+    <div class="main-header__logo main-header__logo--form">
+      <img src="img/logotype-mobile.svg" width="230" height="85" alt="Барбешоп Бородинский">
     </div>
     <nav class="main-navigation main-navigation--closed">
+      <button class="main-navigation__toggle" type="button"></button>
       <div class="main-navigation__wrapper">
-        <!-- <button class="main-navigation__toggle" type="button">Open</button> -->
         <ul class="main-navigation__items">
-          <!-- <li class="main-navigation__item main-navigaton__item--active"><a href="#">Записаться</a></li>
-        <li class="main-navigation__item"><a href="#">Главная</a></li>
-        <li class="main-navigation__item"><a href="#">Наши работы</a></li>
-        <li class="main-navigation__item"><a href="#">Записаться</a></li>
-        <li class="main-navigation__item"><a href="#">Контакты</a></li>
-        <li class="main-navigation__item"><a href="#">HTML Academy</a></li> -->
+          <li class="main-navigation__item "><a href="#">Главная</a></li>
+          <li class="main-navigation__item"><a href="#">Наши работы</a></li>
+          <li class="main-navigation__item main-navigation__item--active-form"><a>Записаться</a></li>
+          <li class="main-navigation__item"><a href="#">Контакты</a></li>
+          <li class="main-navigation__item"><a href="#">HTML Academy</a></li>
         </ul>
         <ul class="main-navigation__user-items">
-          <!-- <li class="main-navigation__user-item">
-          <a class="main-navigation__user-login" href="#">Вход</a>
-        </li> -->
+          <li class="main-navigation__user-item">
+            <a class="main-navigation__user-login" href="#"><span>Вход</span></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -38,44 +36,77 @@
     <section class="form">
       <div class="form__wrapper">
         <h2 class="form__title">Запись на стрижку</h2>
+        <a class="form__to-main btn" href="#">На главную</a>
         <form action="#">
           <fieldset class="form__contacts">
-            <!-- <input class="form__contact" type="text" name="contacts" id="" placeholder="Фамилия">
-            <input class="form__contact" type="text" name="contacts" id="" placeholder="Имя">
-            <input class="form__contact" type="text" name="contacts" id="" placeholder="Отчество">
-            <input class="form__contact" type="tel" name="contacts" id="" placeholder="Контактный телефон">
-            <input class="form__contact" type="email" name="contacts" id="" placeholder="Контактный e-mail">
-            <textarea class="form__contact" name="contacts" rows="8" cols="80">Доп. информация для мастера</textarea> -->
+            <input class="form__contact form__contact--surname" type="text" name="contacts" placeholder="Фамилия">
+            <input class="form__contact form__contact--name" type="text" name="contacts" placeholder="Имя">
+            <input class="form__contact form__contact--patronymic" type="text" name="contacts" placeholder="Отчество">
+            <input class="form__contact form__contact--tel" type="tel" name="contacts" placeholder="Контактный телефон">
+            <input class="form__contact form__contact--email" type="email" name="contacts" placeholder="Контактный e-mail">
+            <textarea class="form__textarea" name="contacts" rows="8" cols="32" placeholder="Доп. информация для мастера"></textarea>
           </fieldset>
           <fieldset class="form__models">
-            <!-- <legend>Выберите модель бороды:</legend>
-            <input class="form__model" type="radio" name="model" id="model-1">
-            <label for="model-1">адмирал</label>
-            <input class="form__model" type="radio" name="model" id="model-2">
-            <label for="model-2">лесоруб</label>
-            <input class="form__model" type="radio" name="model" id="model-3">
-            <label for="model-3">полярник</label>
-            <input class="form__model" type="radio" name="model" id="model-4">
-            <label for="model-4">боярин</label>
-            <input class="form__model" type="radio" name="model" id="model-5">
-            <label for="model-5">мудрец</label> -->
+            <legend>Выберите модель бороды:</legend>
+            <label>
+            <input class="form__model" type="radio" name="model" checked>
+            <span class="form__model-indicator"></span>
+            адмирал
+             <img src="http://placehold.it/52x49" width="52" height="49" alt="Адмирал">
+            </label>
+            <label>
+            <input class="form__model" type="radio" name="model">
+            <span class="form__model-indicator"></span>
+            лесоруб
+            <img src="http://placehold.it/58x68" width="58" height="68" alt="Лесоруб">
+            </label>
+            <label>
+            <input class="form__model" type="radio" name="model">
+            <span class="form__model-indicator"></span>
+            полярник
+            <img src="http://placehold.it/64x78" width="64" height="78" alt="Полярник">
+           </label>
+            <label>
+            <input class="form__model" type="radio" name="model">
+            <span class="form__model-indicator"></span>
+            боярин
+            <img src="http://placehold.it/58x98" width="58" height="98" alt="Боярин">
+           </label>
+            <label>
+            <input class="form__model" type="radio" name="model">
+            <span class="form__model-indicator"></span>
+            мудрец
+            <img src="http://placehold.it/46x105" width="46" height="105" alt="Мудрец">
+           </label>
           </fieldset>
           <fieldset class="form__services">
-            <!-- <legend>Дополнительные услуги:</legend>
-            <input class="form__service" type="checkbox" name="service" id="service-1">
-            <label for="service-1">Подкрасить бороду</label>
-            <input class="form__service" type="checkbox" name="service" id="service-2">
-            <label for="service-2">Накрутить усы</label>
-            <input class="form__service" type="checkbox" name="service" id="service-3">
-            <label for="service-3">Причесать бороду</label>
-            <input class="form__service" type="checkbox" name="service" id="service-4">
-            <label for="service-4">Подравнять виски</label>
-            <input class="form__service" type="checkbox" name="service" id="service-5">
-            <label for="service-5">Убрать седину</label>
-            <input class="form__service" type="checkbox" name="service" id="service-6">
-            <label for="service-6">Отполировать лысину</label> -->
+            <legend>Дополнительные услуги:</legend>
+            <label>
+            <input class="form__service" type="checkbox" name="service" checked>
+            <span class="form__service-indicator"></span>
+            Подкрасить бороду</label>
+            <label>
+            <input class="form__service" type="checkbox" name="service" checked>
+            <span class="form__service-indicator"></span>
+            Накрутить усы</label>
+            <label>
+            <input class="form__service" type="checkbox" name="service">
+            <span class="form__service-indicator"></span>
+            Причесать бороду</label>
+            <label>
+            <input class="form__service" type="checkbox" name="service">
+            <span class="form__service-indicator"></span>
+            Подравнять виски</label>
+            <label>
+            <input class="form__service" type="checkbox" name="service">
+            <span class="form__service-indicator"></span>
+            Убрать седину</label>
+            <label>
+            <input class="form__service" type="checkbox" name="service">
+            <span class="form__service-indicator"></span>
+            Отполировать лысину</label>
           </fieldset>
-          <!-- <input class="form__submit btn" type="submit" value="Отправить заявку"> -->
+          <input class="form__submit btn" type="submit" value="Отправить заявку">
         </form>
       </div>
     </section>
@@ -83,24 +114,24 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <p class="main-footer__contacts">
-        <!-- <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
-      <a href="tel:+78125556666">
-              <span>+7 (812) 555-66-66</span>
-          </a> -->
+        <b>Барбершоп Бородинский</b>г. Санкт-Петербург, ул. Большая<br> Конюшенная 19/8
+        <a class="main-footer__tel btn" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </p>
       <p class="main-footer__social">
-        <!-- <span class="social-links">
-              <a class="social-link social-link--vk" href="#">VK</a>
-              <a class="social-link social-link--fb" href="#">FB</a>
-              <a class="social-link social-link--in" href="#">IN</a>
-          </span> -->
+        <span class="social-links">
+              <a class="social-links__item social-links__item--vk" href="#"></a>
+              <a class="social-links__item social-links__item--fb" href="#"></a>
+              <a class="social-links__item social-links__item--in" href="#"></a>
+          </span>
       </p>
       <p class="main-footer__copyright">
-        <!-- Разработано:
-      <a class="main-footer__copyright-link btn" href="#">HTML Academy</a> -->
+        Разработано:
+        <a class="main-footer__copyright-link btn" href="https://htmlacademy.ru/">HTML Academy</a>
       </p>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
