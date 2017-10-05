@@ -1,16 +1,16 @@
 .advantages__wrapper {
   position: relative;
   min-height: 408px;
-  border-bottom: 1px solid $grey-dark;
   background-color: $grey-dark;
+  border-bottom: 1px solid $grey-dark;
   @include container-mobile;
   &::after {
+    content: "";
     position: absolute;
     bottom: -35px;
     left: 0;
     width: 0;
     height: 0;
-    content: '';
     border-width: 35px 160px 0 160px;
     border-style: solid;
     border-color: $grey-dark transparent transparent transparent;
@@ -42,14 +42,14 @@
 }
 
 .advantages__item p {
-  font-size: 20px;
   margin-top: -15px;
+  font-size: 20px;
 }
 
 .advantages__item-title {
+  margin-top: 23px;
   font-size: 30px;
   line-height: 30px;
-  margin-top: 23px;
   text-transform: uppercase;
 }
 
@@ -57,12 +57,12 @@
   .advantages__wrapper {
     width: 640px;
     min-height: 536px;
-    border-bottom-color: $grey-color;
     background-color: $grey-color;
+    border-bottom-color: $grey-color;
     &::after {
-      z-index: 10;
       bottom: -41px;
       left: -67px;
+      z-index: 10;
       border-width: 40px 387px 0 387px;
       border-color: $grey-color transparent transparent transparent;
     }
@@ -76,12 +76,12 @@
     padding-top: 42px;
     padding-left: 30px;
     &::after {
+      content: "";
       position: absolute;
       bottom: 0;
       display: block;
       width: 568px;
       height: 1px;
-      content: '';
       background-color: #4a4a4a;
     }
     &:last-child::after {
@@ -122,10 +122,10 @@
     padding-left: 40px;
     text-align: center;
     &::after {
-      width: 1px;
-      height: 270px;
       top: 75px;
       right: 0px;
+      width: 1px;
+      height: 270px;
     }
   }
   .advantages__item-text {

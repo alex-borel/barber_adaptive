@@ -12,17 +12,21 @@
 <body>
   <header class="main-header">
     <div class="main-header__logo main-header__logo--form">
-      <img src="img/logotype-mobile.svg" width="230" height="85" alt="Барбешоп Бородинский">
+      <picture class="main-header__image">
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" alt="Логотип">
+      </picture>
     </div>
     <nav class="main-navigation main-navigation--closed">
       <button class="main-navigation__toggle" type="button"></button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__items">
-          <li class="main-navigation__item "><a href="#">Главная</a></li>
-          <li class="main-navigation__item"><a href="#">Наши работы</a></li>
+          <li class="main-navigation__item "><a href="./index.html">Главная</a></li>
+          <li class="main-navigation__item"><a href="./photo.html">Наши работы</a></li>
           <li class="main-navigation__item main-navigation__item--active-form"><a>Записаться</a></li>
-          <li class="main-navigation__item"><a href="#">Контакты</a></li>
-          <li class="main-navigation__item"><a href="#">HTML Academy</a></li>
+          <li class="main-navigation__item"><a href="#contacts">Контакты</a></li>
+          <li class="main-navigation__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
         </ul>
         <ul class="main-navigation__user-items">
           <li class="main-navigation__user-item">
@@ -36,7 +40,7 @@
     <section class="form">
       <div class="form__wrapper">
         <h2 class="form__title">Запись на стрижку</h2>
-        <a class="form__to-main btn" href="#">На главную</a>
+        <a class="form__to-main btn" href="./index.html">На главную</a>
         <form action="#">
           <fieldset class="form__contacts">
             <input class="form__contact form__contact--surname" type="text" name="contacts" placeholder="Фамилия">
@@ -52,31 +56,31 @@
             <input class="form__model" type="radio" name="model" checked>
             <span class="form__model-indicator"></span>
             адмирал
-             <img src="http://placehold.it/52x49" width="52" height="49" alt="Адмирал">
+             <img src="img/admiral.svg" width="52" height="49" alt="Адмирал">
             </label>
             <label>
             <input class="form__model" type="radio" name="model">
             <span class="form__model-indicator"></span>
             лесоруб
-            <img src="http://placehold.it/58x68" width="58" height="68" alt="Лесоруб">
+            <img src="img/woodcutter.svg" width="58" height="68" alt="Лесоруб">
             </label>
             <label>
             <input class="form__model" type="radio" name="model">
             <span class="form__model-indicator"></span>
             полярник
-            <img src="http://placehold.it/64x78" width="64" height="78" alt="Полярник">
+            <img src="img/polar.svg" width="64" height="78" alt="Полярник">
            </label>
             <label>
             <input class="form__model" type="radio" name="model">
             <span class="form__model-indicator"></span>
             боярин
-            <img src="http://placehold.it/58x98" width="58" height="98" alt="Боярин">
+            <img src="img/boyar.svg" width="58" height="98" alt="Боярин">
            </label>
             <label>
             <input class="form__model" type="radio" name="model">
             <span class="form__model-indicator"></span>
             мудрец
-            <img src="http://placehold.it/46x105" width="46" height="105" alt="Мудрец">
+            <img src="img/wise.svg" width="46" height="105" alt="Мудрец">
            </label>
           </fieldset>
           <fieldset class="form__services">
@@ -111,7 +115,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" id="contacts">
     <div class="main-footer__wrapper">
       <p class="main-footer__contacts">
         <b>Барбершоп Бородинский</b>г. Санкт-Петербург, ул. Большая<br> Конюшенная 19/8
@@ -126,7 +130,7 @@
       </p>
       <p class="main-footer__copyright">
         Разработано:
-        <a class="main-footer__copyright-link btn" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class="main-footer__copyright-link btn" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
       </p>
     </div>
   </footer>

@@ -8,13 +8,13 @@
   border: 1px solid $light-color;
   @include container-mobile;
   &::after {
+    content: "";
     position: absolute;
-    z-index: 2;
     bottom: -36px;
     left: 0;
+    z-index: 2;
     width: 0;
     height: 0;
-    content: '';
     border-width: 35px 160px 0 160px;
     border-style: solid;
     border-color: $light-color transparent transparent transparent;
@@ -22,9 +22,9 @@
 }
 
 .form__title {
+  margin-top: 28px;
   font-size: 30px;
   line-height: 30px;
-  margin-top: 28px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -41,13 +41,13 @@
 }
 
 .form__contact {
-  font-size: 18px;
-  line-height: 30px;
   display: block;
   width: 280px;
   height: 50px;
   margin-bottom: 6px;
   padding-left: 18px;
+  font-size: 18px;
+  line-height: 30px;
   border: 1px solid $beige-color;
   outline: none;
   &--patronymic {
@@ -60,24 +60,24 @@
     border-color: #d5c9bd;
   }
   &:active {
-    border-color: #999;
+    border-color: #999999;
   }
 }
 
 .form__textarea {
-  font-size: 14px;
-  line-height: 18px;
   width: 280px;
   height: 112px;
   padding-top: 6px;
   padding-left: 18px;
+  font-size: 14px;
+  line-height: 18px;
   border: 1px solid $beige-color;
   outline: none;
   &:hover {
     border-color: #d5c9bd;
   }
   &:active {
-    border-color: #999;
+    border-color: #999999;
   }
 }
 
@@ -89,14 +89,14 @@
 }
 
 .form__models legend {
+  margin-bottom: 20px;
   font-size: 20px;
   line-height: 27px;
-  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.form__models input[type='radio'] {
+.form__models input[type="radio"] {
   display: none;
 }
 
@@ -130,9 +130,9 @@
   top: -60px;
   width: 50px;
   height: 50px;
+  background-color: $white-color;
   border: 1px solid #eae3dc;
   border-radius: 50%;
-  background-color: $white-color;
   &:hover {
     border-color: #d5c9bd;
   }
@@ -141,16 +141,16 @@
   }
 }
 
-.form__models input[type='radio']:checked+.form__model-indicator::after {
+.form__models input[type="radio"]:checked+.form__model-indicator::after {
+  content: "";
   position: absolute;
   top: 15px;
   left: 15px;
   width: 18px;
   height: 18px;
-  content: '';
+  background-color: $white-color;
   border: 1px solid #e9e2db;
   border-radius: 50%;
-  background-color: $white-color;
 }
 
 .form__services {
@@ -160,15 +160,15 @@
 }
 
 .form__services label {
-  font-size: 18px;
-  line-height: 30px;
   position: relative;
   display: block;
   margin-top: 28px;
   padding-left: 43px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-.form__services input[type='checkbox'] {
+.form__services input[type="checkbox"] {
   display: none;
 }
 
@@ -186,9 +186,9 @@
   display: inline-block;
   width: 36px;
   height: 36px;
-  cursor: pointer;
-  border: 1px solid $beige-color;
   background-color: $white-color;
+  border: 1px solid $beige-color;
+  cursor: pointer;
   &:hover {
     border-color: #d5c9bd;
   }
@@ -197,31 +197,31 @@
   }
 }
 
-.form__services input[type='checkbox']:checked+.form__service-indicator::after {
+.form__services input[type="checkbox"]:checked+.form__service-indicator::after {
+  content: "";
   position: absolute;
   top: 9px;
   left: 7px;
   width: 22px;
   height: 10px;
-  content: '';
-  transform: rotate(315deg);
   border: 2px solid $black-color;
   border-top: none;
   border-right: none;
+  transform: rotate(315deg);
 }
 
 .form__submit {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
   margin: -1px auto;
   margin-bottom: 40px;
-  cursor: pointer;
-  letter-spacing: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
   color: $white-color;
+  letter-spacing: 0;
+  background-color: #826550;
   border: none;
   outline: none;
-  background-color: #826550;
+  cursor: pointer;
   &:hover {
     background-color: $brown-dark;
   }
@@ -238,19 +238,19 @@
     }
   }
   .form__title {
+    margin-top: 57px;
     font-size: 40px;
     line-height: 40px;
-    margin-top: 57px;
     text-align: left;
   }
   .form__to-main {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 50px;
     position: absolute;
     top: 54px;
     right: 0;
     display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
     text-align: center;
     color: $black-color;
     border: 1px solid $beige-color;
@@ -263,15 +263,15 @@
     }
   }
   .form__contacts {
-    font-size: 0;
     width: 640px;
     margin-top: 73px;
     margin-left: 0;
+    font-size: 0;
   }
   .form__contact {
-    font-size: 24px;
     width: 213px;
     height: 70px;
+    font-size: 24px;
     &--surname {
       display: inline-block;
     }
@@ -293,48 +293,48 @@
     }
   }
   .form__textarea {
-    font-size: 24px;
-    line-height: 30px;
     width: 640px;
     height: 210px;
     margin-top: 5px;
     padding-top: 10px;
+    font-size: 24px;
+    line-height: 30px;
   }
   .form__models {
     width: 640px;
     margin-top: 40px;
   }
   .form__models legend {
-    font-size: 30px;
-    line-height: 30px;
     position: relative;
     margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 30px;
     &:before {
+      content: "";
       position: absolute;
       top: 15px;
       left: -160px;
       display: block;
       width: 135px;
       height: 1px;
-      content: '';
       background-color: $beige-color;
     }
     &:after {
+      content: "";
       position: absolute;
       top: 15px;
       left: 345px;
       display: block;
       width: 135px;
       height: 1px;
-      content: '';
       background-color: $beige-color;
     }
   }
   .form__models label {
-    font-size: 24px;
-    line-height: 24px;
     margin-top: 0;
     padding-top: 16px;
+    font-size: 24px;
+    line-height: 24px;
     &:nth-child(3) {
       margin-left: 57px;
     }
@@ -356,45 +356,45 @@
     margin-top: 42px;
   }
   .form__services legend {
-    font-size: 30px;
-    line-height: 30px;
     position: relative;
     margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 30px;
     &:before {
+      content: "";
       position: absolute;
       top: 15px;
       left: -165px;
       display: block;
       width: 130px;
       height: 1px;
-      content: '';
       background-color: $beige-color;
     }
     &:after {
+      content: "";
       position: absolute;
       top: 15px;
       left: 345px;
       display: block;
       width: 130px;
       height: 1px;
-      content: '';
       background-color: $beige-color;
     }
   }
   .form__services label {
-    font-size: 24px;
-    line-height: 30px;
     display: inline-block;
     width: 304px;
     margin-top: 50px;
+    font-size: 24px;
+    line-height: 30px;
   }
   .form__submit {
-    font-size: 20px;
-    line-height: 30px;
     width: 640px;
     height: 70px;
     margin-top: 55px;
     margin-bottom: 76px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

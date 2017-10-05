@@ -5,16 +5,14 @@
 }
 
 body {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 27px;
   margin: 0;
   padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: $black-color;
+  font-style: normal;
   background-color: $grey-color;
 }
-
-
 

@@ -5,6 +5,7 @@
 .main-header__logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 85px;
   background-color: $grey-dark;
   @include container-mobile;
@@ -18,10 +19,16 @@
   .main-header__logo {
     width: 100%;
     min-height: 397px;
-    background: $black-color url('../img/header-bg.jpg') no-repeat center top;
+    background: $black-color url("../img/header-bg.jpg") no-repeat center top;
     background-size: cover;
     &--form {
       min-height: 214px;
+    }
+  }
+  .main-header__image {
+    margin-top: -25px;
+    &--index {
+      margin-top: -208px;
     }
   }
 }
@@ -29,10 +36,16 @@
 @media (min-width: $desktop) {
   .main-header__logo {
     min-height: 650px;
-    background: $black-color url('../img/header-bg-desktop.jpg') no-repeat center top;
+    background: $black-color url("../img/header-bg-desktop.jpg") no-repeat center top;
     background-size: cover;
     &--form {
       min-height: 308px;
+    }
+  }
+  .main-header__image {
+    margin-top: -37px;
+    &--index {
+      margin-top: -375px;
     }
   }
 }

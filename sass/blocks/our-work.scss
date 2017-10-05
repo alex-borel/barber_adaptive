@@ -1,52 +1,288 @@
 .our-work {
-    width: 280px;
-    margin: 20px auto;
-    border: 2px solid green;
+  width: 280px;
+  margin: 20px auto;
 }
 
 .our-work:nth-of-type(1) {
-    min-height: 750px;
+  position: relative;
+  margin-bottom: 18px;
 }
 
 .our-work:nth-of-type(2) {
-    min-height: 370px;
+  margin-top: 0;
 }
 
-.our-work:nth-of-type(3) {
-    min-height: 340px;
+.our-work__sign {
+  position: absolute;
+  top: 402px;
+  left: 0;
+  display: block;
+  width: 175px;
+  height: 50px;
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  color: $white-color;
+  text-transform: uppercase;
+  background-color: #826550;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 168px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 25px 8px 25px 0;
+    border-style: solid;
+    border-color: transparent #ececec transparent transparent;
+  }
 }
 
-.our-work:nth-of-type(4) {
-    min-height: 390px;
+.our-work__info {
+  margin-top: -18px;
+  padding-top: 19px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 21px;
+  border: 1px solid $beige-color;
+  border-top: none;
+  &--alex {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  &--vladimir {
+    padding-top: 23px;
+    padding-bottom: 28px;
+  }
+  &--vinston {
+    padding-top: 22px;
+    padding-bottom: 28px;
+  }
+}
+
+.our-work__info-author {
+  margin-top: 10px;
+  margin-bottom: -3px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.our-work__info-review {
+  text-align: left;
+}
+
+.our-work__icons {
+  margin-top: -4px;
+  &--vladimir {
+    margin-left: 7px;
+  }
+}
+
+.our-work__icon {
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+  &:nth-child(2) {
+    margin-left: 75px;
+  }
+  &:nth-child(3) {
+    margin-top: 14px;
+    margin-left: 45px;
+  }
+  &--scissors::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -36px;
+    display: block;
+    width: 21px;
+    height: 20px;
+    background: url("../img/scissors-icon.svg");
+  }
+  &--beard::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -44px;
+    display: block;
+    width: 23px;
+    height: 21px;
+    background: url("../img/beard-icon.svg");
+  }
+  &--mustache::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -59px;
+    display: block;
+    width: 45px;
+    height: 12px;
+    background: url("../img/mustache-icon.svg");
+  }
 }
 
 @media (min-width: $tablet) {
-    .our-work {
-        width: 640px;
+  .our-work {
+    display: flex;
+    width: 640px;
+    margin-bottom: 40px;
+  }
+  .our-work__sign {
+    top: 35px;
+    left: -3px;
+  }
+  .our-work:nth-of-type(1) {
+    margin-top: 45px;
+    margin-bottom: 40px;
+  }
+  .our-work:nth-of-type(1) picture {
+    height: 480px;
+  }
+  .our-work:nth-of-type(2) picture {
+    height: 293px;
+  }
+  .our-work:nth-of-type(3) picture {
+    height: 294px;
+  }
+  .our-work:nth-of-type(4) picture {
+    height: 294px;
+  }
+  .our-work__info {
+    width: 370px;
+    margin-top: 0;
+    padding-top: 33px;
+    padding-right: 45px;
+    padding-left: 50px;
+    border: 1px solid $beige-color;
+    border-left: none;
+    &--alex {
+      padding-top: 28px;
+      padding-right: 70px;
     }
-    .our-work:nth-of-type(1) {
-        min-height: 480px;
+    &--vladimir {
+      padding-top: 28px;
+      padding-right: 60px;
     }
-    .our-work:nth-of-type(2), .our-work:nth-of-type(3), .our-work:nth-of-type(4) {
-        min-height: 295px;
+    &--vinston {
+      padding-top: 28px;
+      padding-right: 60px;
     }
+  }
+  .our-work__info-review {
+    margin-top: 30px;
+  }
+  .our-work__icons {
+    margin-top: 200px;
+    &--alex {
+      margin-top: 78px;
+    }
+    &--vladimir {
+      margin-top: 104px;
+    }
+    &--vinston {
+      margin-top: 50px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
-    .our-work {
-        width: 960px;
-        min-height: 480px;
+  .our-work {
+    width: 293px;
+    height: 541px;
+  }
+  .our-work:nth-of-type(1) {
+    width: 960px;
+    height: 480px;
+    margin-top: 85px;
+  }
+  .our-work:nth-of-type(2),
+  .our-work:nth-of-type(3),
+  .our-work:nth-of-type(4) {
+    display: inline-block;
+    margin-top: 2px;
+    vertical-align: top;
+  }
+  .our-work:nth-of-type(3),
+  .our-work:nth-of-type(4) {
+    margin-left: 35px;
+  }
+  .our-work__sign {
+    top: 27px;
+    left: 785px;
+    &::after {
+      display: none;
     }
-
-    .our-work:nth-of-type(2), .our-work:nth-of-type(3), .our-work:nth-of-type(4) {
-        min-height: 540px;
-        width: 293px;
-        display: inline-block;
-        margin: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 0;
+      height: 0;
+      border-width: 25px 0 25px 8px;
+      border-style: solid;
+      border-color: transparent transparent transparent $light-color;
     }
-
-    .our-work:nth-of-type(3), .our-work:nth-of-type(4) {
-        margin-left: 34px;
+  }
+  .our-work__info {
+    width: 480px;
+    padding-top: 118px;
+    padding-left: 37px;
+    &--alex {
+      width: 294px;
+      margin-top: -8px;
+      padding-top: 18px;
+      padding-right: 10px;
+      padding-left: 32px;
+      border-left: 1px solid $beige-color;
     }
+    &--vladimir {
+      width: 294px;
+      margin-top: -8px;
+      padding-top: 18px;
+      padding-left: 32px;
+      border-left: 1px solid $beige-color;
+    }
+    &--vinston {
+      width: 294px;
+      margin-top: -8px;
+      padding-top: 18px;
+      padding-right: 30px;
+      padding-left: 32px;
+      border-left: 1px solid $beige-color;
+    }
+  }
+  .our-work__info-review {
+    &--petr {
+      padding-right: 120px;
+    }
+  }
+  .our-work__icons {
+    margin-top: 147px;
+    &--alex {
+      margin-top: 50px;
+      margin-bottom: 5px;
+    }
+    &--vladimir {
+      margin-top: 77px;
+      margin-bottom: 5px;
+    }
+    &--vinston {
+      margin-top: 23px;
+      margin-bottom: 5px;
+    }
+  }
+  .our-work__icon {
+    &:nth-child(3) {
+      margin-left: 90px;
+    }
+  }
 }
 

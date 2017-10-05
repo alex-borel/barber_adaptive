@@ -7,41 +7,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Барбершоп Бородинский</title>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
   <header class="main-header">
-    <div class="main-header__logo">
-      <img src="http://placehold.it/226x30" width="226" height="30" alt="Барбешоп Бородинский">
+    <div class="main-header__logo main-header__logo--form">
+      <picture class="main-header__image">
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" alt="Логотип">
+      </picture>
     </div>
     <nav class="main-navigation main-navigation--closed">
+      <button class="main-navigation__toggle" type="button"></button>
       <div class="main-navigation__wrapper">
-        <!-- <button class="main-navigation__toggle" type="button">Open</button> -->
         <ul class="main-navigation__items">
-          <!-- <li class="main-navigation__item main-navigation__item--active">
-          <a href="#">Работы</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">Наши работы</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">Записаться</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">Контакты</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">HTML Academy</a>
-        </li> -->
+          <li class="main-navigation__item "><a href="./index.html">Главная</a></li>
+          <li class="main-navigation__item main-navigation__item--active-photo"><a>Наши работы</a></li>
+          <li class="main-navigation__item"><a href="./form.html">Записаться</a></li>
+          <li class="main-navigation__item"><a href="#contacts">Контакты</a></li>
+          <li class="main-navigation__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
         </ul>
         <ul class="main-navigation__user-items">
-          <!-- <li class="main-navigation__user-item">
-          <a class="main-navigation__user-login" href="#">Вход</a>
-        </li> -->
+          <li class="main-navigation__user-item">
+            <a class="main-navigation__user-login" href="#"><span>Вход</span></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -50,49 +40,66 @@
     <section class="photo">
       <div class="photo__wrapper">
         <h2 class="photo__title">Наши работы</h2>
+        <a class="photo__to-main btn" href="./index.html">На главную</a>
         <article class="our-work">
-          <!-- <img src="http://placehold.it/280x480" width="280" height="480" alt="Работа месяца">
-        <span class="our-work__sign">Работа месяца</span>
-        <div class="our-work__info">
-          <cite>Лжепётр Мчиславский</cite>
-          <blockquote>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! </blockquote>
-          <div class="our-work__icons">
-            <span class="our-work__icon">Стрижка</span>
-            <span class="our-work__icon">Бритье</span>
-            <span class="our-work__icon">Усы</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/petr-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/petr-tablet.jpg">
+            <img src="img/petr-mobile.jpg" alt="Петр">
+          </picture>
+          <span class="our-work__sign">Работа месяца</span>
+          <div class="our-work__info">
+            <p class="our-work__info-author">Лжепётр Мчиславский</p>
+            <p class="our-work__info-review our-work__info-review--petr">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого! </p>
+            <div class="our-work__icons">
+              <span class="our-work__icon our-work__icon--scissors">Стрижка</span>
+              <span class="our-work__icon our-work__icon--beard">Бритье</span>
+              <span class="our-work__icon our-work__icon--mustache">Усы</span>
+            </div>
           </div>
-        </div> -->
         </article>
         <article class="our-work">
-          <!-- <img src="http://placehold.it/280x176" width="280" height="176" alt="Саша Мальцев">
-        <div class="our-work__info">
-          <cite>Саша Мальцев</cite>
-          <blockquote>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </blockquote>
-          <div class="our-work__icons">
-            <span class="our-work__icon">Стрижка</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/alex-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/alex-tablet.jpg">
+            <img src="img/alex-mobile.jpg" alt="Петр">
+          </picture>
+          <div class="our-work__info our-work__info--alex">
+            <p class="our-work__info-author">Саша Мальцев</p>
+            <p class="our-work__info-review">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
+            <div class="our-work__icons our-work__icons--alex">
+              <span class="our-work__icon our-work__icon--scissors">Стрижка</span>
+            </div>
           </div>
-        </div> -->
         </article>
         <article class="our-work">
-          <!-- <img src="http://placehold.it/280x176" width="280" height="176" alt="Владимир Иваныч">
-        <div class="our-work__info">
-          <cite>Владимир Иваныч</cite>
-          <blockquote>К зимнему сезону — готов!</blockquote>
-          <div class="our-work__icons">
-            <span class="our-work__icon">Борода</span>
-            <span class="our-work__icon">Усы</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/vladimir-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/vladimir-tablet.jpg">
+            <img src="img/vladimir-mobile.jpg" alt="Владимир">
+          </picture>
+          <div class="our-work__info our-work__info--vladimir">
+            <p class="our-work__info-author">Владимир Иваныч</p>
+            <p class="our-work__info-review">К зимнему сезону - готов!</p>
+            <div class="our-work__icons our-work__icons--vladimir">
+              <span class="our-work__icon our-work__icon--beard">Борода</span>
+              <span class="our-work__icon our-work__icon--mustache">Усы</span>
+            </div>
           </div>
-        </div> -->
         </article>
         <article class="our-work">
-          <!-- <img src="http://placehold.it/280x176" width="280" height="176" alt="Винстон Синий">
-        <div class="our-work__info">
-          <cite>Винстон Синий</cite>
-          <blockquote>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</blockquote>
-          <div class="our-work__icons">
-            <span class="our-work__icon">Стрижка</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/vinston-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/vinston-tablet.jpg">
+            <img src="img/vinston-mobile.jpg" alt="Винстон">
+          </picture>
+          <div class="our-work__info our-work__info--vinston">
+            <p class="our-work__info-author">Винстон Синий</p>
+            <p class="our-work__info-review">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+            <div class="our-work__icons our-work__icons--vinston">
+              <span class="our-work__icon our-work__icon--scissors">Стрижка</span>
+            </div>
           </div>
-        </div> -->
         </article>
       </div>
     </section>
@@ -100,55 +107,69 @@
       <div class="pricelist__wrapper">
         <h2 class="pricelist__title">Прейскурант</h2>
         <table class="pricelist__items">
-          <!-- <tr>
-          <td class="pricelist__item">Классическая стрижка <br>(с мытьем головы)</td>
-          <td class="pricelist__value">1 500 руб.</td>
-        </tr>
-        <tr>
-          <td class="pricelist__item">Современный вариант <br> (с мытьем головы)</td>
-          <td class="pricelist__value">1 500 руб. </td>
-        </tr>
-        <tr>
-          <td class="pricelist__item">Индивидуальный подход <br> (с мытьем головы)</td>
-          <td class="pricelist__value">2 000 руб.</td>
-        </tr>
-        <tr>
-          <td class="pricelist__item">Бритье головы <br> (без мытья)</td>
-          <td class="pricelist__value">500 руб.</td>
-        </tr>
-        <tr>
-          <td class="pricelist__item">Бритье головы <br> (с мытьем головы)</td>
-          <td class="pricelist__value">1 000 руб.</td>
-        </tr> -->
+          <tr>
+            <td class="pricelist__number">1</td>
+            <td class="pricelist__item">Классическая стрижка</td>
+            <td class="pricelist__info">с мытьем головы</td>
+            <td class="pricelist__value">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="pricelist__number">2</td>
+            <td class="pricelist__item">Современный вариант</td>
+            <td class="pricelist__info">с мытьем головы</td>
+            <td class="pricelist__value">1 500 руб. </td>
+          </tr>
+          <tr>
+            <td class="pricelist__number">3</td>
+            <td class="pricelist__item">Индивидуальный подход</td>
+            <td class="pricelist__info">с мытьем головы</td>
+            <td class="pricelist__value">2 000 руб.</td>
+          </tr>
+          <tr>
+            <td class="pricelist__number">4</td>
+            <td class="pricelist__item">Бритье бороды</td>
+            <td class="pricelist__info">без мытья</td>
+            <td class="pricelist__value">500 руб.</td>
+          </tr>
+          <tr>
+            <td class="pricelist__number">5</td>
+            <td class="pricelist__item">Бритье головы</td>
+            <td class="pricelist__info">с мытьем головы</td>
+            <td class="pricelist__value">1 000 руб.</td>
+          </tr>
         </table>
         <div class="pricelist__time">
-          <!-- <img src="http://placehold.it/58x57" width="58" height="57" alt="Часы">
-          <p>с 10:00 до 14:00 скидка 20%</p> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/clock-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/clock-tablet.png">
+            <img src="img/clock.png" alt="Часы">
+          </picture>
+          <p>C 10:00 до 14:00 скидка 20%</p>
         </div>
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" id="contacts">
     <div class="main-footer__wrapper">
       <p class="main-footer__contacts">
-        <!-- <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
-      <a href="tel:+78125556666">
-          <span>+7 (812) 555-66-66</span>
-      </a> -->
+        <b>Барбершоп Бородинский</b>г. Санкт-Петербург, ул. Большая<br> Конюшенная 19/8
+        <a class="main-footer__tel btn" href="tel:+78125556666">+7 (812) 555-66-66 </a>
       </p>
       <p class="main-footer__social">
-        <!-- <span class="social-links">
-          <a class="social-link social-link--vk" href="#">VK</a>
-          <a class="social-link social-link--fb" href="#">FB</a>
-          <a class="social-link social-link--in" href="#">IN</a>
-      </span> -->
+        <span class="social-links">
+                 <a class="social-links__item social-links__item--vk" href="#"></a>
+                 <a class="social-links__item social-links__item--fb" href="#"></a>
+                 <a class="social-links__item social-links__item--in" href="#"></a>
+             </span>
       </p>
       <p class="main-footer__copyright">
-        <!-- Разработано:
-      <a class="main-footer__copyright-link btn" href="#">HTML Academy</a> -->
+        Разработано:
+        <a class="main-footer__copyright-link btn" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
       </p>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

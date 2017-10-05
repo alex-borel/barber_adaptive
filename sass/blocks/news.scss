@@ -4,18 +4,18 @@
 
 .news__wrapper {
   min-height: 505px;
+  background-color: $light-color;
   border: 1px solid $light-color;
   border-bottom-color: $beige-color;
-  background-color: $light-color;
   @include container-mobile;
 }
 
 .news__title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 30px;
   margin-top: 65px;
   margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -33,12 +33,12 @@
   padding-left: 18px;
   cursor: pointer;
   &:first-child::after {
+    content: "";
     position: absolute;
     bottom: 24px;
     display: block;
     width: 280px;
     height: 1px;
-    content: '';
     background-color: $beige-color;
   }
   &:last-child {
@@ -51,8 +51,8 @@
     border-color: #826550 transparent transparent transparent;
   }
   &:hover p {
-    text-decoration: underline;
     color: #826550;
+    text-decoration: underline;
   }
   &:active .news__date {
     color: #a09187;
@@ -67,21 +67,21 @@
 }
 
 .news__date {
-  font-size: 16px;
-  line-height: 16px;
   display: inline-block;
   width: 50px;
   height: 50px;
-  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
   vertical-align: top;
+  text-align: center;
   color: $white-color;
   background-color: $black-color;
   &::after {
+    content: "";
     display: block;
     width: 0;
     height: 0;
     margin-top: 4px;
-    content: '';
     border-width: 10px 25px 0 25px;
     border-style: solid;
     border-color: $black-color transparent transparent transparent;
@@ -89,8 +89,8 @@
 }
 
 .news__date b {
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
   line-height: 30px;
 }
 
@@ -99,15 +99,15 @@
   width: 215px;
   margin-top: -15px;
   margin-left: 20px;
-  text-align: left;
   vertical-align: top;
+  text-align: left;
 }
 
 .news__to-all {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 50px;
   margin: 5px auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 50px;
   text-align: center;
   color: $black-color;
   border: 1px solid $beige-color;
@@ -126,14 +126,14 @@
   }
   .news__wrapper {
     position: relative;
-    @include container-tablet;
     min-height: 324px;
+    @include container-tablet;
   }
   .news__title {
-    font-size: 40px;
-    line-height: 40px;
     margin-top: 87px;
     margin-bottom: 63px;
+    font-size: 40px;
+    line-height: 40px;
     text-align: left;
   }
   .news__items {
@@ -159,13 +159,13 @@
 
 @media (min-width: $desktop) {
   .news__wrapper {
-    @include container-desktop;
     min-height: 367px;
+    @include container-desktop;
   }
   .news__title {
     margin-top: 125px;
-    margin-left: 65px;
     margin-bottom: 65px;
+    margin-left: 65px;
   }
   .news__to-all {
     top: 115px;

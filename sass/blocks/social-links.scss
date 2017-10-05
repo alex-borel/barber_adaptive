@@ -6,17 +6,16 @@
   display: block;
   width: 106px;
   height: 100px;
-  transition: background-position .7s, background-color .7s;
   vertical-align: top;
+  background: url("../img/spritesheet.png") no-repeat;
   border: 1px solid #3e3e3e;
   border-right: none;
-  background: url('../img/spritesheet.png') no-repeat;
+  transition: background-position .7s, background-color .7s;
   &:hover {
+    background: #252525 url("../img/spritesheet.png") no-repeat;
     border-color: #252525;
-    background: #252525 url('../img/spritesheet.png') no-repeat;
   }
   &--vk {
-    border-left: none;
     background-position: -70px -1105px;
   }
   &--fb {
@@ -24,6 +23,7 @@
   }
   &--in {
     background-position: -76px -598px;
+    border-right: 1px solid #3e3e3e;
   }
   &--vk:hover {
     background-position: -70px -1351px;
@@ -40,15 +40,15 @@
   .social-links__item {
     width: 213px;
     &--vk {
-      border-left: 1px solid #3e3e3e;
       background-position: -17px -1105px;
+      border-left: 1px solid #3e3e3e;
     }
     &--fb {
       background-position: -12px -82px;
     }
     &--in {
-      border-right: 1px solid #3e3e3e;
       background-position: -22px -598px;
+      border-right: 1px solid #3e3e3e;
     }
     &--vk:hover {
       background-position: -17px -1351px;
@@ -70,17 +70,17 @@
   .social-links__item {
     width: 50px;
     height: 50px;
-    background: url('../img/social-desktop.png') no-repeat;
+    background: url("../img/social-desktop.png") no-repeat;
     &:hover {
-      background: #252525 url('../img/social-desktop.png') no-repeat;
+      background: #252525 url("../img/social-desktop.png") no-repeat;
     }
     &--vk {
-      border-right: 1px solid #3e3e3e;
       background-position: -23px -425px;
+      border-right: 1px solid #3e3e3e;
     }
     &--fb {
-      border-right: 1px solid #3e3e3e;
       background-position: -21px -27px;
+      border-right: 1px solid #3e3e3e;
     }
     &--in {
       background-position: -25px -227px;
