@@ -12,7 +12,7 @@ var rename = require('gulp-rename');
 var run = require('run-sequence');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
-var minify = require("gulp-minify");
+var minjs = require('gulp-minify');
 
 
 gulp.task('serve', function () {
@@ -44,7 +44,7 @@ gulp.task('styles', function () {
         sort: true
       })
     ]))
-    .pipe(gulp.dest('build/css/'))
+    .pipe(gulp.dest('build/css'))
     .pipe(server.reload({
       stream: true
     }))
@@ -80,7 +80,7 @@ gulp.task('clean', function() {
 
 gulp.task('js-min', function() {
 	gulp.src('js/*.js')
-		.pipe(minify({
+		.pipe(minjs({
 			ext: {
 				min: '.min.js'
 			},
@@ -90,6 +90,6 @@ gulp.task('js-min', function() {
 
 
 gulp.task('build',function(fn) {
-  run('clean','styles','copy', 'images', 'js-min',fn);
+  run('clean', 'copy', 'styles', 'js-min', 'images', fn);
 });
 
